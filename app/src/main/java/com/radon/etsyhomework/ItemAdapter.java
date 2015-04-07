@@ -7,6 +7,8 @@ import android.os.AsyncTask;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -76,6 +78,10 @@ public class ItemAdapter extends ArrayAdapter<Item> {
                 holder.price.setText("$" + item.price);
             }
         }
+
+        //Add a listview animation to make scrolling look smoother.
+        Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.abc_fade_in);
+        view.startAnimation(animation);
         return view;
     }
 

@@ -3,6 +3,7 @@ package com.radon.etsyhomework;
 import android.app.ProgressDialog;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.app.ListFragment;
 import android.app.LoaderManager;
@@ -11,6 +12,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -82,7 +85,6 @@ public class ItemFragment extends ListFragment implements LoaderManager.LoaderCa
                 ((MainActivity)getActivity()).prompt(item);
             }
         });
-
     }
 
     @Override

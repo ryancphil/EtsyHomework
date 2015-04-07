@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Etsy Homework</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="description" style="bold">\nDescription:</string>
+
+    <string-array name="sort">
+        <item>Title</item>
+        <item>Shop</item>
+        <item>Price</item>
+    </string-array>
+
+
+</resources>
